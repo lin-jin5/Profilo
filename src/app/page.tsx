@@ -4,6 +4,7 @@ import Skills from "@/components/sections/skills";
 import Projects from "@/components/sections/projects";
 import Experience from "@/components/sections/experience";
 import Contact from "@/components/sections/contact";
+import PortfolioFooter from "@/components/layout/PortfolioFooter"; // <-- NEW IMPORT
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Projects />
       <Experience />
       <Contact />
+      <PortfolioFooter /> {/* <-- RENDERED ONCE HERE */}
     </>
   );
 }

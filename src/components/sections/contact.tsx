@@ -54,4 +54,5 @@ export default function Contact() {
       </footer>
     </section>
   );
+  
 }

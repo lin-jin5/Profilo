@@ -27,11 +27,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <footer className="py-6 mt-12 w-full">
-        <p className="text-sm text-muted-foreground text-center">
-          © 2025 Hesed Anu Afolami — Built with Next.js
-        </p>
-      </footer>
+      {/* Footer Removed */}
     </section>
   );
 }

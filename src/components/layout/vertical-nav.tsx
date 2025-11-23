@@ -21,14 +21,14 @@ export default function VerticalNav() {
     setIsOpen(false);
     const targetId = href.substring(1);
     const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      const mainContainer = document.querySelector("main");
-      if (mainContainer) {
-        mainContainer.scrollTo({
-          left: targetElement.offsetLeft,
-          behavior: "smooth",
-        });
-      }
+    const mainContainer = document.querySelector("main"); // Target the <main> element
+
+    if (targetElement && mainContainer) {
+      // Scroll horizontally based on the target element's position within the main container
+      mainContainer.scrollTo({
+        left: targetElement.offsetLeft,
+        behavior: "smooth",
+      });
     }
   };
 
